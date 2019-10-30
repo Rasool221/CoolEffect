@@ -38,7 +38,10 @@ def check_for_collision(ball_list):
 def setup():
     size(400, 400)
     
-    for i in range(15):
+    # Change the number below to control the 
+    # number of balls to draw
+    BALLS_RENDERED = 15
+    for i in range(BALLS_RENDERED):
         ball_list.append(Ball(5, 0, 40))
         
 def draw():
